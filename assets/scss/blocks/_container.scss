@@ -1,0 +1,19 @@
+/* Path: template-parts/blocks/container.php */
+.container-block {
+  margin-top: 8.0rem;
+  margin-bottom: 12.8rem;
+
+  @include breakpoint(md-only) {
+    margin-top: 6.4rem;
+    margin-bottom: 9.6rem;
+  }
+
+  @include breakpoint(sm-down) {
+    margin-top: 3.2rem;
+    margin-bottom: 4.8rem;
+
+    .wp-block-spacer {
+      max-height: .8rem;
+    }
+  }
+}

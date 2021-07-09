@@ -1,0 +1,157 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 3.2rem;
+  font-family: $sub-font;
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+h1, .h1 {
+  font-size: 4.8rem;
+  line-height: 1.35;
+}
+
+h2, .h2 {
+  font-size: 2.4rem;
+}
+
+h3, .h3 {
+  font-size: 2.2rem;
+}
+
+h4, .h4 {
+  font-size: 2rem;
+}
+
+h5, .h5 {
+  font-size: 1.8rem;
+}
+
+h6, .h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  &:empty {
+    display: none;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 2.4rem;
+  }
+}
+
+a {
+  font-family: $sub-font;
+  color: $blue;
+  text-decoration: none;
+  @include transition;
+
+  &:hover {
+    color: $sub-color;
+  }
+}
+
+ul:not([class]) {
+  li {
+    position: relative;
+    padding-left: 2.8rem;
+    list-style: none;
+
+    &:before {
+      content: '-';
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+ol:not([class]),
+dl:not([class]) {
+  padding-left: 4.0rem;
+}
+
+// Forms/Inputs
+[type=color],
+[type=date],
+[type=datetime-local],
+[type=datetime],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+select {
+  @include input-styles;
+}
+
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  &:not([data-type='mob-btn']), {
+    @include btn;
+  }
+}
+
+// Button additional styles
+.btn {
+  @include btn;
+
+  &--outline {
+    color: $sub-color;
+    background: transparent;
+    border: .2rem solid $sub-color;
+    border-radius: .8rem;
+  }
+}
+
+@include breakpoint(md-only) {
+  h1, .h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+
+@include breakpoint(sm-down) {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 1.6rem;
+  }
+
+  h1, .h1 {
+    font-size: 2.4rem;
+  }
+
+  h2, .h2 {
+    font-size: 1.6rem;
+  }
+
+  h3, .h3 {
+    font-size: 1.5rem;
+  }
+
+  h4, .h4 {
+    font-size: 1.4rem;
+  }
+
+  h5, .h5 {
+    font-size: 1.3rem;
+  }
+
+  h6, .h6 {
+    font-size: 1.2rem;
+  }
+
+  dl:not([class]),
+  ol:not([class]),
+  ul:not([class]) {
+    margin: 1.6rem 0;
+  }
+}

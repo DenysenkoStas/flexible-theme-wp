@@ -1,0 +1,72 @@
+/* Path: template-parts/blocks/header-section.php */
+.header-section {
+  background-image: url('../images/blur.png');
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    min-height: 24.5rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.6rem;
+    color: $sub-color;
+
+    &:hover {
+      color: $blue;
+
+      polyline {
+        stroke: $blue;
+      }
+    }
+
+    polyline {
+      @include transition;
+    }
+
+    svg {
+      margin-right: .4rem;
+    }
+  }
+
+  &__title {
+    margin-top: 3.2rem;
+  }
+
+  &__text {
+    margin-bottom: 3.5rem;
+  }
+
+  @include breakpoint(md-only) {
+    &__container {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      min-height: 18.3rem;
+    }
+
+    &__text {
+      margin-bottom: 2.3rem;
+    }
+  }
+
+  @include breakpoint(sm-down) {
+    &__container {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      min-height: 10.3rem;
+    }
+
+    &__title {
+      margin-top: 1.6rem;
+    }
+
+    &__text {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

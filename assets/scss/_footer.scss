@@ -1,0 +1,39 @@
+.footer {
+  margin-top: auto;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 10rem;
+  }
+
+  &__copyright {
+    font-family: $sub-font;
+    line-height: 1.9rem;
+    font-weight: 300;
+    color: $grey;
+  }
+
+  .footer-menu {
+    &__link {
+      padding: 1rem 2.4rem;
+      color: $grey;
+
+      &:hover {
+        color: $sub-color;
+      }
+    }
+  }
+
+  @include breakpoint(sm-down) {
+    &__container {
+      min-height: 6.4rem;
+    }
+
+    .footer-menu {
+      &__link {
+        padding: 1rem 1.6rem;
+      }
+    }
+  }
+}

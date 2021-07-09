@@ -1,0 +1,24 @@
+/* Path: template-parts/blocks/text-fields.php */
+.text-fields {
+  &__subtext {
+    display: inline-block;
+    opacity: .5;
+    margin-bottom: 3.2rem;
+    font-style: italic;
+  }
+
+  & ~ .img-with-text {
+    margin-top: 0;
+  }
+
+  @include breakpoint(md-down) {
+    &__title {
+      margin-bottom: 2.4rem;
+      width: 75%;
+    }
+
+    &__subtext {
+      margin-bottom: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+/* Project variables */
+$main-color: #211747;
+$sub-color: #24125F;
+$blue: #009CDE;
+$grey: #8B90AB;
+$light: #F2F4FA;
+$white: #F8F9FC;
+$red: #EB247D;
+
+$font: 'Raleway', sans-serif;
+$sub-font: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+$gap: 1.6rem;
+$medium-gap: 4.8rem;
+
+// Custom fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&display=swap');
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('../fonts/NeueHaasDisplay-Medium.eot');
+  src: local('NeueHaasDisplay-Medium'),
+  url('../fonts/NeueHaasDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NeueHaasDisplay-Medium.woff2') format('woff2'),
+  url('../fonts/NeueHaasDisplay-Medium.woff') format('woff'),
+  url('../fonts/NeueHaasDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('../fonts/NeueHaasDisplay-Roman.eot');
+  src: local('NeueHaasDisplay-Roman'),
+  url('../fonts/NeueHaasDisplay-Roman.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NeueHaasDisplay-Roman.woff2') format('woff2'),
+  url('../fonts/NeueHaasDisplay-Roman.woff') format('woff'),
+  url('../fonts/NeueHaasDisplay-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('../fonts/NeueHaasDisplay-Light.eot');
+  src: local('NeueHaasDisplay-Light'),
+  url('../fonts/NeueHaasDisplay-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NeueHaasDisplay-Light.woff2') format('woff2'),
+  url('../fonts/NeueHaasDisplay-Light.woff') format('woff'),
+  url('../fonts/NeueHaasDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,263 @@
+/* reseter.css - https://github.com/krishdevdb/reseter.css and custom parameters */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//html:focus-within {
+//  scroll-behavior: smooth;
+//}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+
+  // A elements that don't have a class get default styles
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: monospace, monospace;
+  font-size: 1rem;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25rem;
+}
+
+sup {
+  top: -.5rem;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  line-height: inherit;
+  border: 1px solid currentColor;
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+  cursor: pointer;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  padding: 1px 5px;
+}
+
+input {
+  overflow: visible;
+}
+
+input,
+textarea {
+  padding: 1px;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=color] {
+  background: inherit;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+::-webkit-search-decoration,
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  color: inherit;
+  overflow: visible;
+}
+
+dl:not([class]),
+ol:not([class]),
+ul:not([class]) {
+  margin: 2.4rem 0;
+}
+
+ol ol,
+ol ul,
+ol dl,
+ul ol,
+ul ul,
+ul dl,
+dl ol,
+dl ul,
+dl dl {
+  margin: 0;
+}
+
+// Remove list styles and padding on ul, ol elements with a class attribute
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border: 0;
+}
+
+// Make images easier to work with
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+details {
+  display: block;
+}
+
+dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  background-color: inherit;
+  border: solid;
+  color: inherit;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}

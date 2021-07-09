@@ -1,0 +1,87 @@
+/* Path: template-parts/blocks/contact-form.php */
+.contact-form {
+  &__link:hover {
+    color: $blue;
+  }
+
+  &__link, &__address {
+    display: block;
+    margin-bottom: 1.6rem;
+    width: fit-content;
+    font-family: $sub-font;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    color: $main-color;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+
+    &__item,
+    &__link,
+    &__icon {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    &__link {
+      path {
+        @include transition;
+      }
+
+      &:hover path {
+        fill: $sub-color;
+      }
+    }
+  }
+
+  @include breakpoint(lg) {
+    &__container {
+      display: flex;
+      column-gap: 9.6rem;
+    }
+
+    &__col {
+      width: 50%;
+    }
+
+    &__text {
+      margin-bottom: 8rem;
+    }
+
+    .socials {
+      margin-top: 7.8rem;
+    }
+  }
+
+  @include breakpoint(md-only) {
+    &__title {
+      margin-bottom: 2.4rem;
+    }
+
+    &__text {
+      margin-bottom: 4.8rem;
+    }
+
+    .socials {
+      margin-top: 3.2rem;
+      margin-bottom: 6.4rem;
+    }
+  }
+
+  @include breakpoint(sm-down) {
+    &__text {
+      margin-bottom: 4rem;
+    }
+
+    .socials {
+      margin-top: 3.2rem;
+      margin-bottom: 4rem;
+    }
+  }
+}

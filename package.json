@@ -1,0 +1,23 @@
+{
+  "name": "flexible-theme-wp",
+  "version": "1.0",
+  "author":  "Stas Denysenko (https://github.com/DenysenkoStas)",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
+  },
+  "scripts": {
+    "bs": "browser-sync start --config bs-config.js",
+    "watch": "node-sass --watch assets/scss/main.scss -o assets/css --source-map true --output-style compressed",
+    "build:css": "node-sass assets/scss -o assets/css --output-style compressed && postcss --use autoprefixer -r assets/css/*.css --no-map",
+    "prefix": "postcss --use autoprefixer -r assets/css/*.css --no-map"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}

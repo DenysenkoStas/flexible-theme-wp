@@ -1,0 +1,72 @@
+.pum {
+  &.pum-theme-yoba-theme {
+    .pum-close {
+      content: url('../images/close.svg');
+      @include transition;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    .gform_validation_errors {
+      display: none;
+    }
+
+    .gform_title {
+      text-align: center;
+    }
+
+    .gform_footer {
+      text-align: center;
+    }
+
+    @include breakpoint(lg) {
+      .pum-container {
+        padding: 6.4rem 12rem 4.5rem;
+        max-width: 72rem;
+      }
+    }
+
+    @include breakpoint(md-only) {
+      .pum-container {
+        padding: 6.4rem 9.6rem 4.5rem;
+        max-width: 67rem;
+      }
+    }
+
+    @include breakpoint(sm-down) {
+      .pum-container {
+        padding: 4.8rem 1.6rem 2.9rem;
+        max-width: 40rem;
+      }
+
+      .pum-content + .pum-close {
+        top: 1.6rem;
+        right: 1.6rem;
+      }
+
+      .gform_button {
+        min-width: 17.2rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+// Replacing standard plugin styles
+html.pum-open.pum-open-overlay.pum-open-scrollable {
+  .pum-overlay.pum-active {
+    overflow-y: auto !important;
+  }
+
+  body > [aria-hidden] {
+    padding-right: 0 !important;
+  }
+
+  @include breakpoint(lg) {
+    body > [aria-hidden] {
+      padding-right: 1rem !important;
+    }
+  }
+}
